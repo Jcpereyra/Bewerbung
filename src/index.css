@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --text: #fdfcfb;
+  --background: #211e1b;
+  --primary: #e1ceb5;
+  --secondary: #ffe7cc;
+  --accent: #ffe7cc;
+  --font-one: Lavishly Yours, cursive;
+  --font-two: OI Display, sans-serif;
+  --font-three: Rubik Moonrock, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+  display: flexbox;
+  padding: 0;
+  margin: 0;
+
+}
+html{
+   width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0;
+  overflow: hidden;
+  display: flexbox;
+  margin: 0;
+}
+#root{
+  height: 140vh;
+  width: 100%;
+  display: flex;
+  padding-bottom:  150px;
+}
+#footer{
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary);
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  z-index: 99999;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0px;
+  overflow-x: hidden;
+  margin: 0;
+}
+html{
+   width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0px;
+  overflow: hidden;
+  margin: 0;
+}
+#root{
+  height: 140vh;
+  width: 100%;
+  display: flex;
+}
+#footer{
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary);
+  display: flex;
+  position: static;
+  bottom: 0;
+  z-index: 99999;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  left: 0;
+  margin-left: -8px;
+}
 }
