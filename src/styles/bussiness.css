@@ -1,0 +1,184 @@
+.bussiness{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 150px;
+}
+.bussiness h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: var(--font-three);
+    color: var(--secondary);
+    font-weight: 300;
+}
+.emptyContract{
+    font-family: var(--font-six);
+    font-size: 1.5rem;
+    color: brown;
+}
+.deal{
+      width: 200px;
+      height: 50px;
+      background-color: crimson;
+      color: var(--primary);
+      font-size: 1.4rem;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      border-radius: 20px;
+      -webkit-animation:  entrance 2s infinite;
+      animation:  entrance 2s infinite;
+      -webkit-transition: all 2.5s linear ;
+      -moz-transition: all 2.5s linear ;
+      -ms-transition: all 2.5s linear ;
+      -o-transition: all 2.5s linear ;
+      transition: all 2.5s linear ;
+}
+.deal-detailse{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deal-detailse p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: green;
+}
+.deal-detailse p strong{
+    font-family: var(--font-five);
+    font-size: 1.4rem;
+}
+.deal-detailse h3{
+    font-family: var(--font-three);
+    font-size: 2rem;
+    color: var(--secondary);
+    font-weight: 400;
+}
+.choice-detail{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choice-detail h4{
+    font-family: var(--font-five);
+    font-size: 1.3rem;
+}
+.in,.ex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.in{
+    color: green;
+}
+.ex{
+    color: red;
+}
+.price{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.price li{
+    color: green;
+    font-size: 1.5rem;
+}
+.deal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.deal-form h3{
+     font-family: var(--font-three);
+    font-size: 2rem;
+    color: var(--secondary);
+    font-weight: 400;
+}
+.deal-form label{
+    max-width: 60%;
+    height: auto;
+    font-size: larger;
+    color: var(--text);
+    align-items: center;
+}
+.deal-form label input{
+    font-size: 1.3rem;
+}
+.form-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.form-buttons button{
+    max-width: 40%;
+    height: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    font-family: var(--font-four);
+    font-weight: 200;
+    font-size: 2rem;
+}
+.form-buttons button:first-child {
+  background-color: chartreuse;
+}
+
+.form-buttons button:last-child {
+  background-color: brown;
+}
+@media screen and (max-width: 768px) {
+    .bussiness{
+        width: 100%;
+        height: auto;
+    }
+    .bussiness h1{
+        font-size: 1rem;
+    }
+    .emptyContract{
+        font-size: 1.2rem;
+    }
+    .deal{
+        -webkit-animation: none;
+         animation: none;
+}
+ .deal-detailse{
+    width: 100%;
+    height: auto;
+ }
+ .deal-detailse p{
+    font-size: 12px;
+ }
+ .deal-detailse p strong{
+    font-size: 14px;
+ }
+}
