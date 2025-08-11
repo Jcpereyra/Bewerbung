@@ -1,0 +1,99 @@
+:root {
+  --text: #fdfcfb;
+  --background: #211e1b;
+  --primary: #e1ceb5;
+  --secondary: #ffe7cc;
+  --accent: #ffe7cc;
+  --font-one: Lavishly Yours, cursive;
+  --font-two: OI Display, sans-serif;
+  --font-three: Rubik Moonrocks, sans-serif;
+  --font-four: kablammo , sans-serif;
+  --font-five: Honk , serif;
+  --font-six: Bitcount Grid Double, serif;
+}
+
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+}
+html{
+   width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+}
+#root{
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 100px; 
+}
+#footer{
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
+  left: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.397);
+}
+@media screen and (max-width: 768px) {
+  body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0px;
+  overflow-x: hidden;
+  margin: 0;
+}
+html{
+   width: 100%;
+   min-height: 100vh;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0px;
+  overflow-x: hidden;
+  margin: 0;
+}
+#root{
+  overflow-y: auto;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+#footer{
+  width: 101%;
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  z-index: 99999;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  bottom: auto; 
+    left: auto;
+}
+}

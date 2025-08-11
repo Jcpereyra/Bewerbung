@@ -1,0 +1,189 @@
+/* Overall App Container */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  padding-bottom: 150px; 
+}
+
+/* Header Style */
+.App-header {
+  width: 100%;
+  height: 100px; /* Reduce header height */
+  display: flex;
+  gap: 60px; 
+  align-items: center; /* Center content vertically */
+  padding: 0 20px; /* Add side padding */
+  background-color: var(--secondary); /* Optional: distinguish header */
+  position: fixed; /* Keep header always on top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo Style */
+.App-logo {
+   height: 100px;
+   width: 100px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border-radius: 50%;
+}
+.amount{
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 30px;
+}
+/* Navigation Container */
+.App-nav {
+  display: flex;
+  gap: 60px; /* Space between nav links */
+   height: 100%;
+   width: auto;
+   justify-content: space-between;
+   align-items: center; 
+}
+
+/* Navigation Links */
+.nav-link {
+  color: black;
+  font-weight: 450;
+  font-family: var(--font-three);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10%;
+  text-decoration: none;;
+}
+.nav-link:hover{
+  color: var(--text);
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+/* Content Area */
+.App-content {
+  margin-top: 100px; /* Push content below the fixed header */
+  min-height: 100%;
+  height: auto;
+  padding-bottom: 300px;
+   background-color: var(--background);
+} 
+.App-menu-icon{
+    display: none; /* Hide menu icon by default */
+}
+.bussiness-card {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+.image-Link {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+.image-Link img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background);
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .App-menu-icon{
+        display: block; 
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        color: chartreuse;
+    }
+    .amount{
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+    .App-content{
+        margin-top: 200px;
+        width: 100%;
+        min-height: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 0px;
+        background-color: var(--background);
+    }
+    .App-nav{
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: var(--primary);
+      z-index: 999;
+      flex-direction: column;
+      height: auto;
+      padding: 12px;
+      -webkit-animation: blend 1s ease forwards;
+      animation: blend 1s ease forwards;
+      -webkit-transition: all 1s linear;
+      -moz-transition: all 1s linear;
+      -ms-transition: all 1s linear;
+      -o-transition: all 1s linear;
+       transition: all 1s linear;
+}
+@keyframes blend{
+     from {
+        opacity: 0;
+     } to{
+        opacity: 1;
+}
+}
+    .App-menu-icon{
+        display: block;
+        position: absolute;
+        left: 4;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        color: chartreuse;
+        margin-top: 50px;
+        font-size: 1.5rem;
+        -webkit-transition: all 1s linear;
+        -moz-transition: all 1s linear;
+        -ms-transition: all 1s linear;
+        -o-transition: all 1s linear;
+         transition: all 1s linear;
+}
+    .bussiness-card{
+      width: 150px;
+      height: 100%;
+      position: absolute;
+      right: 12px;
+    }
+    .App-logo{
+      margin-left: 30%;
+    }
+    .image-Link img{
+      width: 40px;
+      height: 40px;
+    }
+}
